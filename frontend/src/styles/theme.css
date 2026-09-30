@@ -1,0 +1,348 @@
+:root {
+  color-scheme: dark;
+  --navy: #F0F1E9;
+  --muted: #A9B2A8;
+  --line: #39433D;
+  --blue: #C3E776;
+  --blue-dark: #AACD61;
+  --panel: #19201E;
+  --raised: #202B27;
+  --bg: #101514;
+  --green: #C3E776;
+  --orange: #EF9C73;
+  --purple: #AACD61;
+  --lime: #C3E776;
+  --peach: #EF9C73;
+  font-family: Inter, 'Segoe UI', system-ui, sans-serif;
+  color: var(--navy);
+  background: var(--bg);
+}
+
+body {
+  color: var(--navy);
+  background: radial-gradient(ellipse at 75% 0%, #1a211d 0%, #101514 58%);
+}
+
+.app-shell,
+.main-scroll {
+  background: transparent;
+}
+
+.sidebar,
+.topbar {
+  color: var(--navy);
+  background: #141a17;
+  border-color: var(--line);
+}
+
+.sidebar {
+  box-shadow: 12px 0 36px #05080655;
+}
+
+.brand strong,
+.breadcrumbs strong,
+.page-heading h1,
+.panel h2,
+.reconstruction-heading h2,
+.reconstruction-info b,
+.action-copy strong,
+.download-copy b,
+.metadata-empty b,
+.preview-empty strong {
+  color: var(--navy);
+}
+
+.brand-mark,
+.nav-link.active,
+.nav-link:hover,
+.action-icon,
+.stat-icon,
+.file-type,
+.drop-icon,
+.info-panel-icon,
+.empty-table-icon,
+.tip-icon,
+.model-symbol {
+  background-color: var(--raised);
+  color: var(--lime);
+}
+
+.side-rule,
+.panel,
+.stat-card,
+.model-banner,
+.reconstruction-section,
+.reconstruction-visual,
+.reconstruction-info,
+.selected-file,
+.upload-tip,
+.compare-form,
+.metrics-result,
+.jobs-panel,
+.downloads-panel,
+.process-panel,
+.metadata-panel {
+  border-color: var(--line);
+}
+
+.panel,
+.stat-card,
+.model-banner,
+.reconstruction-visual,
+.reconstruction-info,
+.selected-file,
+.upload-tip,
+.compare-form,
+.metrics-result,
+.jobs-panel,
+.downloads-panel,
+.process-panel,
+.metadata-panel {
+  color: var(--navy);
+  background: var(--panel);
+  box-shadow: 0 14px 34px #0508062e;
+}
+
+.reconstruction-section {
+  background: linear-gradient(140deg, #19201E, #202B27);
+  box-shadow: 0 16px 40px #05080635;
+}
+
+.reconstruction-heading p,
+.page-heading p,
+.panel p,
+.action-copy span,
+.stat-detail,
+.field small,
+.metadata-empty p,
+.preview-empty p,
+.model-card p,
+.reconstruction-fact span,
+.reconstruction-fact small,
+.reconstruction-info span,
+.info-row > span,
+.table-bottom,
+.page-footer,
+.reconstruction-disclaimer {
+  color: var(--muted);
+}
+
+.nav-link,
+.nav-link svg,
+.topbar,
+.breadcrumbs,
+.topbar-date,
+.quiet-icon {
+  color: var(--muted);
+}
+
+.nav-link.active,
+.nav-link.active svg {
+  color: var(--lime);
+  background: #202B27;
+}
+
+.nav-link:hover {
+  color: var(--navy);
+  background: #202B27;
+}
+
+.connection,
+.system-note,
+.notice-neutral,
+.validation-callout,
+.model-specs,
+.preview-foot,
+.compare-scale,
+.reconstruction-disclaimer {
+  color: var(--muted);
+  background-color: #202B27;
+  border-color: var(--line);
+}
+
+.connection b,
+.info-row b,
+.model-specs b,
+.reconstruction-fact b,
+.metric-card strong,
+.data-table td,
+.status {
+  color: var(--navy);
+}
+
+.dropzone {
+  color: var(--navy);
+  background: var(--panel);
+  border-color: #465248;
+}
+
+.dropzone:hover,
+.dropzone.dragging,
+.dropzone:focus-visible {
+  background: var(--raised);
+  border-color: var(--lime);
+}
+
+.field > span,
+.nav-caption,
+.eyebrow,
+.stat-label,
+.model-kicker,
+.visual-kicker,
+.reconstruction-fact > span {
+  color: var(--muted);
+}
+
+input,
+select,
+.search-box,
+.select-wrap,
+.table-scroll,
+.data-table thead {
+  color: var(--navy);
+  background-color: #101514;
+  border-color: #39433D;
+}
+
+input::placeholder {
+  color: #89958B;
+}
+
+.data-table th {
+  color: var(--muted);
+  background: #202B27;
+}
+
+.data-table td {
+  border-color: #303a34;
+}
+
+.data-table tbody tr:hover {
+  background: #202B27;
+}
+
+.button-primary {
+  color: #182018;
+  background: var(--lime);
+  border-color: var(--lime);
+}
+
+.button-primary:hover:not(:disabled) {
+  color: #101514;
+  background: #D2F191;
+  border-color: #D2F191;
+}
+
+.button-secondary,
+.top-refresh,
+.icon-button,
+.text-button,
+.row-action,
+.download-preview {
+  color: var(--navy);
+  background: var(--raised);
+  border-color: #465248;
+}
+
+.button-secondary:hover:not(:disabled),
+.top-refresh:hover,
+.icon-button:hover,
+.text-button:hover,
+.row-action:hover,
+.download-preview:hover {
+  color: var(--lime);
+  background: #2A3730;
+  border-color: #58664D;
+}
+
+.status-completed,
+.good-value,
+.availability.available {
+  color: var(--lime);
+}
+
+.status-processing,
+.status-queued {
+  color: var(--lime);
+}
+
+.status-failed,
+.danger-action {
+  color: var(--peach);
+}
+
+.notice-error,
+.inline-error {
+  color: #F4C2AD;
+  background: #30231F;
+  border-color: #68483A;
+}
+
+.notice-neutral {
+  border: 1px solid var(--line);
+}
+
+.toast {
+  color: var(--navy);
+  background: #263126;
+  border: 1px solid #58664D;
+}
+
+::selection {
+  color: #101514;
+  background: var(--lime);
+}
+
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+
+.dropzone:focus-visible {
+  outline-offset: 4px;
+}
+
+.brand strong,
+.page-heading h1,
+.reconstruction-heading h2 {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.id-cell,
+.method-cell,
+.input-cell,
+.date-cell,
+.metric-card strong,
+.metadata-list b,
+.info-row b {
+  font-family: ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  letter-spacing: 0;
+}
+
+.model-symbol.symbol-purple,
+.action-icon.purple,
+.stat-icon.purple {
+  color: var(--peach);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* OrbitSRM logo plate. The supplied artwork is a transparent dark-green and lime
+lockup, which would be unreadable directly on the dark sidebar, so it sits on the
+theme's off-white surface (the --navy tone) instead of being recolored. The base
+light styles (src/styles.css) need no plate. */
+.brand-logo-wrap {
+  background: #F0F1E9;
+}
